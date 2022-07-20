@@ -1,0 +1,81 @@
+@keyframes appear {
+  from {   
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.timer_button{
+  width: 80px;
+  height: 50px;
+  margin:  20px auto 0px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+.timer_button:hover{
+  background-color: #ccc;
+}
+.timer_button:active{
+  background-color: #aaa;
+}
+button{
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+button:hover{
+  background-color: #ccc;
+}
+button:active{
+  background-color: #aaa;
+}
+.show_timer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: appear 0.5s ease-in-out;
+}
+.time_area{
+  font-size: 3rem;
+  margin: 20px auto;
+}
+.operating_area{
+  display: flex;
+}
+.operating_area button{
+  margin: 10px 5px 20px;
+}
+.display_area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: appear 0.5s ease-in-out;
+}
+.title, .time_display_area{
+  display: flex;
+  width: 50%;
+}
+.time, .cumulative_time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 50%;
+  margin: 5px auto;
+}
+.unsplit{
+  background-color: #eee;
+  color:#ccc;
+  border: 2px #ccc solid;
+}
+.unsplit:hover{
+  background-color: #eee;
+}
+.display_none{
+  display: none;
+}
